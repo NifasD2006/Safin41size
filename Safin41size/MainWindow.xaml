@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Safin41size"
         mc:Ignorable="d"
-        Title="41 размер" Height="450" Width="800" FontFamily="Comic Sans MS" Icon="/Resources/icon.ico" >
+        Title="41 размер" Height="850" Width="1200" FontFamily="Comic Sans MS" Icon="/Resources/icon.ico" >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100" ></RowDefinition>
@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
         <Image Source="/Resources/logo.png" HorizontalAlignment="Left" ></Image>
         <TextBlock Text="Список товаров" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40" ></TextBlock>
-        <Button Content="Назад" HorizontalAlignment="Right" Background="#FFCC6600" Name="BtnBack" Click="BtnBack_Click" ></Button>
+        <Button Content="Назад" HorizontalAlignment="Right" Name="BtnBack" Click="BtnBack_Click" ></Button>
         <Frame Grid.Row="1" Name="MainFrame" ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden" ></Frame>
     </Grid>
 </Window>
