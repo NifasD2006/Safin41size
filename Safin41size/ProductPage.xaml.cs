@@ -26,9 +26,37 @@ namespace Safin41size
         int CurrentCountPage;
         
         private int EveryPage { get; set; }
-        public ProductPage()
+        public ProductPage( User UserIn )
         {
             InitializeComponent();
+
+            if (UserIn != null)
+            {
+                NameUserTB.Text = UserIn.UserSurname + " " + UserIn.UserName + " " + UserIn.UserPatronymic + " ";
+                switch (UserIn.UserRole)
+                {
+                    case 1:
+                        RoleUserTB.Text = "Клиент";
+                        break;
+                    case 2:
+                        RoleUserTB.Text = "Менеджер";
+                        break;
+                    case 3:
+                        RoleUserTB.Text = "Администратор";
+                        break;
+                    default:
+                        RoleUserTB.Text = "Гость";
+                        break;
+                }
+            }
+            else
+            {
+                NameUserTB.Text = "Гость";
+                RoleUserTB.Text = "Гость";
+            }
+
+
+
             var currentProducts = Safin41Entities.GetContext().Product.ToList();
             ProductListView.ItemsSource = currentProducts;
             ComboBoxFilter.SelectedIndex = 0;

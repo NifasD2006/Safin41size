@@ -11,11 +11,24 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" ></RowDefinition>
+            <RowDefinition Height="auto" ></RowDefinition>
             <RowDefinition Height="*" ></RowDefinition>
             <RowDefinition Height="50" ></RowDefinition>
         </Grid.RowDefinitions>
-        
-        <StackPanel Orientation="Horizontal" Margin="10"  >
+        <WrapPanel Orientation="Vertical" HorizontalAlignment="Center" >
+            <StackPanel Orientation="Vertical" >
+                <TextBlock Text="Вы авторизованы как: " ></TextBlock>
+                <TextBlock Name="NameUserTB"  ></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Ваша роль: "  ></TextBlock>
+                <TextBlock Name="RoleUserTB"  ></TextBlock>
+            </StackPanel>
+            
+        </WrapPanel>
+
+
+        <StackPanel Orientation="Horizontal" Margin="10" Grid.Row="1"  >
             <TextBlock Text="Кол-во выбранных"  Margin="10" ></TextBlock>
             <TextBlock Name="currentPages" Margin="10" ></TextBlock>
             <TextBlock Text="из" Margin="10" ></TextBlock>
@@ -39,7 +52,7 @@
             </StackPanel>    
         </StackPanel>
 
-        <ListView Name="ProductListView" Grid.Row="1" >
+        <ListView Name="ProductListView" Grid.Row="2" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
