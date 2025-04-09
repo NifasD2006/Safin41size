@@ -16,6 +16,7 @@
         <AssociationConnector Association="Safin41Model.FK_Order_PickUpPoint" ManuallyRouted="false" />
         <AssociationConnector Association="Safin41Model.FK__OrderProd__Produ__2E1BDC42" ManuallyRouted="false" />
         <AssociationConnector Association="Safin41Model.FK__User__UserRole__267ABA7A" ManuallyRouted="false" />
+        <AssociationConnector Association="Safin41Model.FK_Order_User" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

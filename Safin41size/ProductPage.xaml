@@ -15,6 +15,7 @@
             <RowDefinition Height="*" ></RowDefinition>
             <RowDefinition Height="50" ></RowDefinition>
         </Grid.RowDefinitions>
+        <Button Content="Заказ" HorizontalAlignment="Right" Name="OrderBtn" Click="BtnOrder_Click" Grid.Row="3"  ></Button>
         <WrapPanel Orientation="Vertical" HorizontalAlignment="Center" >
             <StackPanel Orientation="Vertical" >
                 <TextBlock Text="Вы авторизованы как: " ></TextBlock>
@@ -53,6 +54,11 @@
         </StackPanel>
 
         <ListView Name="ProductListView" Grid.Row="2" >
+            <ListView.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Добавить к заказу" Click="MenuItem_Click"></MenuItem>
+                </ContextMenu>
+            </ListView.ContextMenu>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>

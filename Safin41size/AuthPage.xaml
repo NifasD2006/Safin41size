@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Safin41size"
       mc:Ignorable="d" 
       d:DesignHeight="368.4" d:DesignWidth="692"
-      Title="AuthPage">
+      Title="AuthPage" FontFamily="Comic Sans MS" >
 
     <Grid>
         <Grid.RowDefinitions>

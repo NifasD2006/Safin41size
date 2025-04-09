@@ -73,6 +73,9 @@
     <Compile Include="OrderProduct.cs">
       <DependentUpon>SafinModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="OrderWindow.xaml.cs">
+      <DependentUpon>OrderWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PickUpPoint.cs">
       <DependentUpon>SafinModel.tt</DependentUpon>
     </Compile>
@@ -132,6 +135,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="OrderWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ProductPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -188,6 +195,7 @@
     <Resource Include="images\J384T6.jpg" />
     <Resource Include="images\А112Т4.jpg" />
     <Resource Include="images\picture.png" />
+    <Resource Include="product\picture.png" />
     <Content Include="SafinModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>SafinModel.Context.cs</LastGenOutput>

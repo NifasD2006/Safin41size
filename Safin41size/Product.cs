@@ -32,9 +32,11 @@ namespace Safin41size
         public int ProductQuantityInStock { get; set; }
         public string ProductDescription { get; set; }
         public string ProductPhoto { get; set; }
+        public string ProductStatus { get; set; }
 
-        public string ProductPhotoPath {
-            get 
+        public string ProductPhotoPath
+        {
+            get
             {
                 if (ProductPhoto != null)
                 {
@@ -43,9 +45,10 @@ namespace Safin41size
                 else
                     return null;
             }
-        }    
-        public string ProductStatus { get; set; }
-    
+        }
+
+        public int Quantity { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrderProduct> OrderProduct { get; set; }
     }

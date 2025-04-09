@@ -20,7 +20,7 @@ namespace Safin41size
         private static Safin41Entities _context;
         public static Safin41Entities GetContext()
         {
-            if( _context == null)
+            if (_context == null)
                 _context = new Safin41Entities();
             return _context;
         }

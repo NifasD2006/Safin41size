@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Safin41size"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="AddEditPage">
+      Title="AddEditPage" FontFamily="Comic Sans MS" >
 
     <Grid>
         <TextBlock Text="Привет!!!" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
